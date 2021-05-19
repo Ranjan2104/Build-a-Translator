@@ -9,6 +9,9 @@ Features
     Bulk translations
     Customizable service URL
     HTTP/2 support
+    Installation
+    To install, either use things like pip with the package “googletrans” or download the package and put the “googletrans” directory into your python path.
+    $ pip install googletrans
 You may wonder why this library works properly, whereas other approaches such like goslate won’t work since Google has updated its translation service recently with a ticket mechanism to prevent a lot of crawler programs.
 I eventually figure out a way to generate a ticket by reverse engineering on the obfuscated and minified code used by Google to generate such token, and implemented on the top of Python. However, this could be blocked at any time.
  
